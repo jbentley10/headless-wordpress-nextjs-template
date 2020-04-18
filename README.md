@@ -1,0 +1,1 @@
+# headless-wordpress-nextjs-template
