@@ -1,6 +1,7 @@
 // Import dependencies
 import axios from 'axios'
 import React, { Component, Fragment } from 'react'
+import Link from 'next/link'
 
 // Import components
 import Navigation from '../components/Navigation'
@@ -29,7 +30,13 @@ export default class extends Component {
           {
             this.props.posts.map( post => {
               return (
-                <li key={ post.id }>{ post.title.rendered }</li>
+                <li key={ post.id }>
+                  <Link href={ `/posts/${ post.slug }` }>
+                      <a href={ `/posts/${ post.slug }` }>
+                          { post.title.rendered }
+                      </a>
+                  </Link>
+              </li>
               )
             })
           }
