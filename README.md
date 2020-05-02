@@ -4,5 +4,5 @@ This project is meant to serve as boilerplate for a headless Wordpress installat
 
 *Dependencies*
 1. First, install Local by Flywheel. To download Local, visit: https://localwp.com/
-2. Install dependencies using `npm install`. 
-3. Run the project with `npm run dev`.
+2. Install dependencies using `yarn`. 
+3. Run the project with `yarn dev`.
